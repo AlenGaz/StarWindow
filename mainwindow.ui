@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="starsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>1081</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>200</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>STAR ID</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR CLASS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR NAME</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR MAGNITUDE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NO OF EXOPLANETS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COORDINATES RA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COORDINATES DEC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DISTANCE FROM SUN</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>350</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>310</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Text To Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QDoubleSpinBox" name="magnitudeFrom">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Range :</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="magnitudeTo">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>0</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>To</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>200</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>STAR ID</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR CLASS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR NAME</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STAR MAGNITUDE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NO OF EXOPLANETS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COORDINATES RA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COORDINATES DEC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DISTANCE FROM SUN</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>350</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>310</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Text To Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QDoubleSpinBox" name="magnitudeFrom2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>1</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Range :</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="magnitudeTo2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>0</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>To</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Distance From Point(Range) :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Point Coordinates : </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pointCoords">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>80</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2,3,5</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="distFromPoint">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>80</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="prefix">
+     <string/>
+    </property>
+    <property name="suffix">
+     <string/>
+    </property>
+    <property name="decimals">
+     <number>4</number>
+    </property>
+    <property name="maximum">
+     <double>9999999.990000000223517</double>
+    </property>
+    <property name="value">
+     <double>20.000000000000000</double>
+    </property>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>starsView</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>comboBox_2</zorder>
+   <zorder>stackedWidget_2</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>pointCoords</zorder>
+   <zorder>distFromPoint</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
